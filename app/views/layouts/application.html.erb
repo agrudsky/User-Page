@@ -22,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Cool People</a>
+        <a class="navbar-brand" href="http://ruby-box-131007.usw1.nitrousbox.com/users">Cool People</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,13 +31,14 @@
           <!-- <li class="active"><a href="#">Home</a></li> -->
           <% @cool.each do |coolpeople| %>
           <li><a href="http://ruby-box-131007.usw1.nitrousbox.com/userpage/<%= coolpeople.id %>"><%= coolpeople.name %></a></li>
+          <% end %>
           <li><a href="http://ruby-box-131007.usw1.nitrousbox.com/new_user">New User</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 </div>
-  <% end %>
+
   
   <footer><img src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/1/11/1357921737290/Masterclass-in-HTML5-and--006.jpg" alt="HTML and CSS" width="auto" height="65" style="border: 0;"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png" alt="Ruby on Rails" width="auto" height="60px" style="border: 0;"></footer>
   
