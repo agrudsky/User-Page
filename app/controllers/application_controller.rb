@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
   end
   
   def new
+    @cool = Coolpeople.all
   end
   
   def create
